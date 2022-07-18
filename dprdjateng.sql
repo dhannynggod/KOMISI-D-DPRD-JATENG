@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 07, 2022 at 03:30 PM
+-- Generation Time: Jul 18, 2022 at 06:39 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -91,7 +91,8 @@ CREATE TABLE `tb_anggota` (
 --
 
 INSERT INTO `tb_anggota` (`id`, `nama`, `nip`, `tempat_lahir`, `tanggal_lahir`, `fraksi`, `jabatan`, `file_name`, `type`, `size`) VALUES
-(1, 'DR. Ir. H. ALWIN BASRI, MM, M.IKom', '198503302003121001', 'Yogyakarta', '1964-05-19', 'PDI Perjuangan', 'Ketua', 'ketua.jpg', 'image/jpeg', '7.12109375');
+(4, 'ULAR TANGGA', 'DADUNYA HILANG', '088216247328', '2022-07-14', 'KEMBALI', '', '', '', ''),
+(5, 'UNO', 'DHANY', '911', '2022-07-14', 'KEMBALI', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -115,7 +116,8 @@ CREATE TABLE `tb_log` (
 --
 
 INSERT INTO `tb_log` (`id`, `nama`, `nip`, `asal_berangkat`, `tanggal_jalan`, `tempat_tujuan`, `agenda`, `anggaran`) VALUES
-(1, 'DR. Ir. H. ALWIN BASRI, MM, M.IKom', '198503302003121001', 'Kota Semarang', '2022-06-06', 'Kota Cirebon, Kabupaten Pekalongan, Kota tegal', 'Studi banding terkait pengelolaan angkutan umum massal dan Program Salud (Sadar Lalu Lintas Usia Din', '5000000');
+(2, 'ULAR TANGGA', 'DADUNYA HILANG', 'DALAM PERBAIKAN', '0000-00-00', '', '', ''),
+(3, 'UNO', 'KARTU HILANG BEBERAPA', 'SELESAI PERBAIKAN', '0000-00-00', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -192,13 +194,13 @@ ALTER TABLE `tb_aduan`
 -- AUTO_INCREMENT for table `tb_anggota`
 --
 ALTER TABLE `tb_anggota`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tb_log`
 --
 ALTER TABLE `tb_log`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tb_user`
